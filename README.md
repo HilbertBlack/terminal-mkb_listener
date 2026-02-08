@@ -11,28 +11,34 @@ and inherit the "KEYBOARD_MOUSE_LISTENER" class which is present in
 the "mkblistener" file.
 
 
-class MAIN : public KEYBOARD_MOUSE_LISTENER
-{
-  void mousePressed(MOUSE_EVENT e) override
-  {
-    // override the functions by calling them...
-  }
-  void keyPressedd(unsigned char key) override
-  {
-    // override to use it...
-  }
-}
-
+    class MAIN : public KEYBOARD_MOUSE_LISTENER
+    {
+    
+      void mousePressed(MOUSE_EVENT e) override
+      
+      {
+        // override the functions by calling them...
+      }
+      
+      void keyPressedd(unsigned char key) override
+      
+      {
+        // override to use it...
+      }
+    
+    }
 
 THAT'S DONE.. you can start the operations by calling the 
 "listen" function. 
 
+    class MAIN mkb;
+    
+    mkb.listen();
 
-class MAIN mkb;
-mkb.listen();
------------------------X-------------X--------------------
+----------------------------------------------------------
 
 FEATURES THIS CLASS CAN HANDLE
+
 * mouse button press ( left, middle, right )
 * mouse move
 * mouse drag ( left, middle, right )
